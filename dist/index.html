@@ -16,19 +16,19 @@
 				</div>
 			<form id="survey-form">
 				<div class="input-box">
-					<label for="name" id="name-label"><strong>Name</strong></label><br>
+					<label for="name" id="name-label"><strong>Name</strong></label>
 					<input type="text" name="name" id="name" placeholder="e.g: Mostafa Hegazy" required>
 				</div>
-				<div class="input-box"><br>
-					<label for"email" id="email-label"><strong>E-mail</strong></label><br>
+				<div class="input-box">
+					<label for"email" id="email-label"><strong>E-mail</strong></label>
 					<input type="email" name="email" id="email" placeholder="youremail@example.com" required>
 				</div>
-				<div class="input-box"><br>
-					<label for="age" id="number-label"><strong>Age</strong></label><br>
+				<div class="input-box">
+					<label for="age" id="number-label"><strong>Age</strong></label>
 					<input type="number" name="age" id="number" placeholder="eg: 16" min="13" max="100" required>
 				</div>
-				<div class="input-box"><br>
-					<label for="skill" id="skill-label"><strong>Skill</strong></label><br>
+				<div class="input-box">
+					<label for="skill" id="skill-label"><strong>Skill</strong></label>
 					<select id="dropdown">
 						<option value="Beginner">Beginner</option>
 						<option value="Intermediate">Intermediate</option>
@@ -36,23 +36,25 @@
 						<option value="Expert">Expert</option>
 					</select>
 				</div>
-				<div class="input-box" id="radio-box"><br>
+				<div class="input-box" id="radio-box">
 					<p><strong>Favourite Egyptian Beatboxer</strong></p>
-					<input type="radio" name="favbbx" id="ZSW" value="ZSW1"><label for="favbbx">Ziad SWidan</label><br>
-					<input type="radio" name="favbbx" id="ZSW" value="ZSW2"><label for="favbbx">Ziad SWidan</label><br>
-					<input type="radio" name="favbbx" id="ZSW" value="ZSW3"><label for="favbbx">Ziad SWidan</label>
+					<div class="radio"><input type="radio" name="favbbx" id="ZSW" value="ZSW1"><label for="favbbx">Ziad SWidan</label></div>
+					<div class="radio"><input type="radio" name="favbbx" id="ZSW" value="ZSW2"><label for="favbbx">Ziad SWidan</label></div>
+					<div class="radio"><input type="radio" name="favbbx" id="ZSW" value="ZSW3"><label for="favbbx">Ziad SWidan</label></div>
 				</div>
 				<div class="input-box" id="checkbox-box">
 					<p><strong>What Aspect of Beatbox Are You Good At</strong></p>
-					<input type="checkbox" name="aspect" id="Technicality" value="technicality"><label for="aspect">Technicality</label>
-					<input type="checkbox" name="aspect" id="Musicality" value="musicality"><label for="aspect">Musicality</label>
-					<input type="checkbox" name="aspect" id="Bass Stuff" value="bass-stuff"><label for="aspect">Bass Stuff</label>
+					<div id="checkboxes">
+						<div class="checkbox"><input type="checkbox" name="aspect" id="Technicality" value="technicality"><label for="aspect">Technicality</label></div>
+						<div class="checkbox"><input type="checkbox" name="aspect" id="Musicality" value="musicality"><label for="aspect">Musicality</label></div>
+						<div class="checkbox"><input type="checkbox" name="aspect" id="Bass Stuff" value="bass-stuff"><label for="aspect">Bass Stuff</label></div>
+					</div>
 				</div>
-				<div class="input-box"><br>
-					<label for="comments"><strong>Tell us more about yourself</strong>!</label><br>
+				<div class="input-box">
+					<label for="comments"><strong>Tell us more about yourself</strong>!</label>
 					<textarea id="comments" name="comments"></textarea>
 				</div>
-				<div id="submit-button"><br>
+				<div id="submit-button">
 					<input type="submit" id="submit">
 				</div>
 			</form>

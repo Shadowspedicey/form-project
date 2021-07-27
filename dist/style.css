@@ -1,6 +1,19 @@
+html, body
+{
+	margin: 0;
+}
+
 body
 {
 	background: linear-gradient(90deg, #3D1E71, #FEAE7B)
+}
+
+#main
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #form-header
@@ -11,11 +24,10 @@ body
 
 #title
 {
-	font-family: Cairo;
+	font-family: "Cairo";
 	font-size: 3em;
 	
 	margin: 0;
-	padding-top: 25px;
 }
 
 #description
@@ -28,31 +40,37 @@ body
 #survey-form
 {
 	background: rgba(0, 0, 0, 0.5);
-	width: 65%;
-	height: auto;
+	width: 45%;
 	
 	font-family: 'Roboto';
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	
-	margin: auto;
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding: 2rem 0rem;
 }
 
 .input-box
 {
-	font-size: 1.3em;
+	width: 80%;
+
 	color: white;
-	
-	margin-left: 4.5rem;
-	margin-right: 4.5rem;
+	font-size: 1.3em;
+
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+
+	margin: 1rem 0;
 }
 
 .input-box input
 {
-	width: 100%;
 	padding: 0.5rem;
 	margin-top: 0.4rem;
-	box-sizing: border-box;
 }
 
 .input-box select
@@ -67,10 +85,26 @@ body
 	margin: 0;
 }
 
+#radio-box
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.radio
+{
+	margin-top: 1.125rem;
+}
+
 .input-box input[type="radio"]
 {
 	width: auto;
-	margin-top: 20px;
+}
+
+#checkboxes
+{
+	display: flex;
+	flex-direction: row;
 }
 
 .input-box input[type="checkbox"]
@@ -87,7 +121,7 @@ body
 #comments
 {
 	width: 100%;
-	height: 5em;
+	height: 10rem;
 	
 	font-size: 1.5em;
 }
@@ -102,13 +136,7 @@ body
 	width: auto;
 }
 
-@media (max-width: 1080px)
+@media (max-device-width: 1080px)
 {
-	.input-box
-	{
-		font-size: 0.8em;
-		
-		margin-left: 2rem;
-		margin-right: 2rem;
-	}
+	/* Will fix later */
 }
