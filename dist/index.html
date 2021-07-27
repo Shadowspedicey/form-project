@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Egyptian BBX Form</title>
+		<link rel="stylesheet" href="./style.css">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&family=Viaoda+Libre&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+	</head>
+	<body>
+		<div id="main">
+			<div id="form-header">
+				<h1 id="title">Survey Project Thing</h1>
+				<p id="description">This survey is to sign up to EGBBX.</p>
+				</div>
+			<form id="survey-form">
+				<div class="input-box">
+					<label for="name" id="name-label"><strong>Name</strong></label><br>
+					<input type="text" name="name" id="name" placeholder="e.g: Mostafa Hegazy" required>
+				</div>
+				<div class="input-box"><br>
+					<label for"email" id="email-label"><strong>E-mail</strong></label><br>
+					<input type="email" name="email" id="email" placeholder="youremail@example.com" required>
+				</div>
+				<div class="input-box"><br>
+					<label for="age" id="number-label"><strong>Age</strong></label><br>
+					<input type="number" name="age" id="number" placeholder="eg: 16" min="13" max="100" required>
+				</div>
+				<div class="input-box"><br>
+					<label for="skill" id="skill-label"><strong>Skill</strong></label><br>
+					<select id="dropdown">
+						<option value="Beginner">Beginner</option>
+						<option value="Intermediate">Intermediate</option>
+						<option value="Advanced">Advanced</option>
+						<option value="Expert">Expert</option>
+					</select>
+				</div>
+				<div class="input-box" id="radio-box"><br>
+					<p><strong>Favourite Egyptian Beatboxer</strong></p>
+					<input type="radio" name="favbbx" id="ZSW" value="ZSW1"><label for="favbbx">Ziad SWidan</label><br>
+					<input type="radio" name="favbbx" id="ZSW" value="ZSW2"><label for="favbbx">Ziad SWidan</label><br>
+					<input type="radio" name="favbbx" id="ZSW" value="ZSW3"><label for="favbbx">Ziad SWidan</label>
+				</div>
+				<div class="input-box" id="checkbox-box">
+					<p><strong>What Aspect of Beatbox Are You Good At</strong></p>
+					<input type="checkbox" name="aspect" id="Technicality" value="technicality"><label for="aspect">Technicality</label>
+					<input type="checkbox" name="aspect" id="Musicality" value="musicality"><label for="aspect">Musicality</label>
+					<input type="checkbox" name="aspect" id="Bass Stuff" value="bass-stuff"><label for="aspect">Bass Stuff</label>
+				</div>
+				<div class="input-box"><br>
+					<label for="comments"><strong>Tell us more about yourself</strong>!</label><br>
+					<textarea id="comments" name="comments"></textarea>
+				</div>
+				<div id="submit-button"><br>
+					<input type="submit" id="submit">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

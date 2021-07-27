@@ -1,0 +1,114 @@
+body
+{
+	background: linear-gradient(90deg, #3D1E71, #FEAE7B)
+}
+
+#form-header
+{
+	color: white;
+	text-align: center;
+}
+
+#title
+{
+	font-family: Cairo;
+	font-size: 3em;
+	
+	margin: 0;
+	padding-top: 25px;
+}
+
+#description
+{
+	font-size: 1.1em;
+	
+	margin-top: 0;
+}
+
+#survey-form
+{
+	background: rgba(0, 0, 0, 0.5);
+	width: 65%;
+	height: auto;
+	
+	font-family: 'Roboto';
+	
+	margin: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.input-box
+{
+	font-size: 1.3em;
+	color: white;
+	
+	margin-left: 4.5rem;
+	margin-right: 4.5rem;
+}
+
+.input-box input
+{
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 0.4rem;
+	box-sizing: border-box;
+}
+
+.input-box select
+{
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 0.4rem;
+}
+
+#radio-box p
+{
+	margin: 0;
+}
+
+.input-box input[type="radio"]
+{
+	width: auto;
+	margin-top: 20px;
+}
+
+.input-box input[type="checkbox"]
+{
+	width: auto;
+	margin-top: 0px;
+}
+
+.input-box label
+{
+	margin-right: 6rem;
+}
+
+#comments
+{
+	width: 100%;
+	height: 5em;
+	
+	font-size: 1.5em;
+}
+
+#submit-button
+{
+	text-align: center;
+}
+
+#submit
+{
+	width: auto;
+}
+
+@media (max-width: 1080px)
+{
+	.input-box
+	{
+		font-size: 0.8em;
+		
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
