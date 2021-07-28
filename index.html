@@ -14,26 +14,31 @@
 				<h1 id="title">Survey Project Thing</h1>
 				<p id="description">This survey is to sign up to EGBBX.</p>
 				</div>
-			<form id="survey-form">
+			<form id="survey-form" novalidate>
 				<div class="input-box">
 					<label for="name" id="name-label"><strong>Name</strong></label>
-					<input type="text" name="name" id="name" placeholder="e.g: Mostafa Hegazy" required>
+					<input type="text" name="name" id="name" placeholder="e.g: Mostafa Hegazy" minlength="3" required>
+					<span class="error"></span>
 				</div>
 				<div class="input-box">
 					<label for"email" id="email-label"><strong>E-mail</strong></label>
 					<input type="email" name="email" id="email" placeholder="youremail@example.com" required>
+					<span class="error"></span>
 				</div>
 				<div class="input-box">
 					<label for"password" id="password-label"><strong>Password</strong></label>
-					<input type="password" name="password" id="pasword" minlength="8" required>
+					<input type="password" name="password" id="password" required>
+					<span class="error"></span>
 				</div>
 				<div class="input-box">
 					<label for"c-password" id="c-password-label"><strong>Confirm Password</strong></label>
-					<input type="password" name="c-password" id="c-pasword" required>
+					<input type="password" name="c-password" id="c-password" required>
+					<span class="error"></span>
 				</div>
 				<div class="input-box">
 					<label for="age" id="number-label"><strong>Age</strong></label>
 					<input type="number" name="age" id="number" placeholder="eg: 16" min="13" max="100" required>
+					<span class="error"></span>
 				</div>
 				<div class="input-box">
 					<label for="skill" id="skill-label"><strong>Skill</strong></label>
@@ -49,6 +54,7 @@
 					<div class="radio"><input type="radio" name="favbbx" id="ZSW" value="ZSW1" required><label for="favbbx">Ziad SWidan</label></div>
 					<div class="radio"><input type="radio" name="favbbx" id="ZSW" value="ZSW2" required><label for="favbbx">Ziad SWidan</label></div>
 					<div class="radio"><input type="radio" name="favbbx" id="ZSW" value="ZSW3" required><label for="favbbx">Ziad SWidan</label></div>
+					<span class="error"></span>
 				</div>
 				<div class="input-box" id="checkbox-box">
 					<p><strong>What Aspect of Beatbox Are You Good At</strong></p>
@@ -57,15 +63,17 @@
 						<div class="checkbox"><input type="checkbox" name="aspect" id="Musicality" value="musicality" required><label for="aspect">Musicality</label></div>
 						<div class="checkbox"><input type="checkbox" name="aspect" id="Bass Stuff" value="bass-stuff" required><label for="aspect">Bass Stuff</label></div>
 					</div>
+					<span class="error"></span>
 				</div>
 				<div class="input-box">
 					<label for="comments"><strong>Tell us more about yourself</strong>!</label>
 					<textarea id="comments" name="comments"></textarea>
 				</div>
 				<div id="submit-button">
-					<input type="submit" id="submit">
+					<button>Submit</button>
 				</div>
 			</form>
 		</div>
+		<script src="./main.js"></script>
 	</body>
 </html>
